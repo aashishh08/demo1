@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+</head>
+<body>
+<form method="post" action="/submit-form/">
+    {% csrf_token %}
+
+    <div>
+<!--        <label for =" ">Enter Both Numbers </label>-->
+<!--        <br>-->
+<!--        <input type="number" name="num1" value="{{n1}}"><br>-->
+<!--        <input type="number" name="num2" value="{{n2}}">-->
+<!--        <label for "">The output of {{n1}} + {{n2}} is </label>-->
+<!--        <input type="number" value="{{output}}">-->
+        {{form}}
+
+    <br>
+        <button type="submit" name="button">Submit</button>
+
+    </div>
+</form>
+
+</body>
+</html>

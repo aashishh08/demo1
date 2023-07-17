@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the homepage {{title}}</h1>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Phone number</th>
+        </tr>
+        {% for d in student_list %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.phone}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+{% endblock %}
+</html>
